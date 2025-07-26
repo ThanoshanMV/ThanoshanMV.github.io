@@ -1,0 +1,20 @@
+- title: "Hybrid Deep Learning Approach for Code Clone Detection"
+  authors: "M.V. Thanoshan, K. Banujan, B. Kumara, S. Prasanth"
+  status: "Journal submission in progress"
+  year: 2024
+
+- title: "Code Clone Detection Using Boosting Algorithms"
+  authors: "M.V. Thanoshan, K. Banujan, B. Kumara, S. Prasanth, Z. Li, and I. Paik"
+  conference: "2023 3rd International Conference on Advanced Research in Computing (ICARC)"
+  year: 2023
+  pages: "244-249"
+  doi: "10.1109/ICARC57651.2023.10145638"
+  doi_url: "https://doi.org/10.1109/ICARC57651.2023.10145638"
+  pdf: "/assets/publications/Code_Clone_Detection_Using_Boosting_Algorithms.pdf"
+
+- title: "Detecting the Code Clone Density and Measuring the Complexity of Source Code Using SonarQube"
+  authors: "T. Vijayanandan, B. Kumara, K. Banujan"
+  conference: "2022 Applied Sciences Undergraduate Research Symposium (APSURS)"
+  year: 2022
+  type: "Abstract"
+  pdf: "/assets/publications/APSURS 2022-ThanoshanMV.pdf"

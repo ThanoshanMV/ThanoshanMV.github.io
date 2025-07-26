@@ -1,0 +1,43 @@
+# Site settings
+title: Thanoshan MV
+description: >-
+  Thanoshan MV is a Software Engineer. Explore insights on software engineering, 
+  artificial intelligence, and contributions to the tech community.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://thanoshanmv.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Site data
+author:
+  name: Thanoshan Vijayanandan
+  email: mvthanoshan@apache.org
+  github: ThanoshanMV
+  linkedin: mvthanoshan
+  blog: mvthanoshan.medium.com
+
+# Collections
+collections:
+  publications:
+    output: false
+  projects:
+    output: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
