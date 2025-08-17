@@ -111,8 +111,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    // Apply animation to cards and sections
-    const animateElements = document.querySelectorAll('.overview-card, .work-item, .hero-content');
+    // Apply animation to cards and sections - expanded list for all pages
+    const animateElements = document.querySelectorAll(`
+        .overview-card, 
+        .work-item, 
+        .hero-content, 
+        .publication-item,
+        .project-card,
+        .about-card,
+        .quick-links,
+        .cta-section,
+        .contact-item,
+        .publication-category,
+        .timeline-item,
+        .skill-item
+    `);
     
     animateElements.forEach(element => {
         element.style.opacity = '0';
@@ -120,6 +133,24 @@ document.addEventListener('DOMContentLoaded', function() {
         element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
         observer.observe(element);
     });
+
+    // Also animate elements that might be added dynamically or have different timing
+    setTimeout(() => {
+        const additionalElements = document.querySelectorAll(`
+            .publication-content,
+            .project-content,
+            .contact-wrapper
+        `);
+        
+        additionalElements.forEach(element => {
+            if (element.style.opacity !== '1') {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(element);
+            }
+        });
+    }, 100);
 });
 
 // Utility functions
@@ -156,5 +187,61 @@ const utils = {
                 setTimeout(() => inThrottle = false, limit);
             }
         }
+    },
+
+    // Reinitialize animations for dynamically loaded content
+    reinitializeAnimations: function() {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        const allAnimateElements = document.querySelectorAll(`
+            .overview-card, 
+            .work-item, 
+            .hero-content, 
+            .publication-item,
+            .project-card,
+            .about-card,
+            .quick-links,
+            .cta-section,
+            .contact-item,
+            .publication-category,
+            .timeline-item,
+            .skill-item,
+            .publication-content,
+            .project-content,
+            .contact-wrapper
+        `);
+        
+        allAnimateElements.forEach(element => {
+            if (!element.style.transition) {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(element);
+            }
+        });
     }
 };
+
+// Initialize animations on page visibility change (helpful for back/forward navigation)
+document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) {
+        setTimeout(utils.reinitializeAnimations, 100);
+    }
+});
+
+// Initialize animations on page focus (helpful for tab switching)
+window.addEventListener('focus', function() {
+    setTimeout(utils.reinitializeAnimations, 100);
+});
