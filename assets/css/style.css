@@ -682,11 +682,11 @@ body {
     display: flex;
     gap: var(--spacing-md);
     background: #ffffff;
-    padding: var(--spacing-xl);
-    border-radius: var(--radius-xl);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     transition: var(--transition-normal);
 }
 
@@ -714,13 +714,58 @@ body {
     flex: 1;
 }
 
+/* Publication Header */
+.publication-header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Publication Type Badges */
+.publication-type {
+    flex-shrink: 0;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+
+.publication-type.journal {
+    background: #e3f2fd;
+    color: #1565c0;
+    border: 1px solid #90caf9;
+}
+
+.publication-type.conference {
+    background: #e8f5e8;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.publication-type.abstract {
+    background: #fff3e0;
+    color: #ef6c00;
+    border: 1px solid #ffcc02;
+}
+
+.publication-type.thesis {
+    background: #f3e5f5;
+    color: #7b1fa2;
+    border: 1px solid #ce93d8;
+}
+
 /* IEEE Citation Format */
 .ieee-citation {
     font-size: var(--font-size-base);
     line-height: 1.6;
     color: var(--dark-color);
-    margin-bottom: var(--spacing-md);
+    margin: 0;
     text-align: justify;
+    flex: 1;
 }
 
 .ieee-citation strong {
@@ -746,10 +791,10 @@ body {
     color: var(--text-color);
     font-size: var(--font-size-sm);
     line-height: 1.6;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
     text-align: justify;
     background: var(--light-color);
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
     border-radius: var(--radius-md);
     border-left: 3px solid var(--primary-color);
 }
@@ -1244,7 +1289,18 @@ textarea.form-control {
     .publication-item,
     .project-card,
     .contact-form {
-        padding: var(--spacing-lg);
+        padding: var(--spacing-md);
+    }
+
+    .publication-header {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+        align-items: flex-start;
+    }
+
+    .publication-type {
+        align-self: flex-start;
+        margin-top: 0;
     }
 
     .timeline-content {
