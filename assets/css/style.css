@@ -702,14 +702,14 @@ body {
 }
 
 /* Publication Numbers */
-.publication-number {
+/* .publication-number {
     font-weight: 700;
     color: var(--primary-color);
     font-size: var(--font-size-lg);
     min-width: 40px;
     flex-shrink: 0;
     padding-top: 2px;
-}
+} */
 
 .publication-content {
     flex: 1;
