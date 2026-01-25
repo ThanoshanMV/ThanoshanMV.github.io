@@ -3,167 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Thanoshan MV - Software Engineer, PhD Aspirant, and Open-source Enthusiast passionate about Software Engineering and AI">
-    <meta name="keywords" content="Software Engineer, PhD, Open Source, AI, Apache ShardingSphere, 99x">
-    <meta name="author" content="Thanoshan Vijayanandan">
-    <title>Thanoshan MV</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpeg" href="./assets/images/favicon.jpg">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>.:: Thanoshan MV ::.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #000000;
+            font-family: monospace;
+            font-size: 13px;
+            line-height: 1.5;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border: 3px solid #cccccc;
+            box-shadow: none;
+            text-align: justify;
+        }
+
+        .header {
+            /* text-align: center; */
+            margin-bottom: 30px;
+            color: #000000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .ascii-art {
+            color: #000000;
+            white-space: pre;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 12px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            color: #000000;
+            margin-bottom: 15px;
+            white-space: pre;
+            font-size: 14px;
+        }
+
+        .content {
+            color: #000000;
+            margin-left: 0;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .content strong {
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .link {
+            color: #0000ff;
+            text-decoration: underline;
+        }
+
+        .link:hover {
+            color: #000080;
+            text-decoration: underline;
+        }
+
+        .entry {
+            margin-bottom: 15px;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .date {
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .ascii-border {
+            color: #000000;
+            white-space: pre;
+            margin: 10px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #666666;
+            font-style: italic;
+        }
+
+        .ascii-name {
+            color: #000000;
+            white-space: pre;
+            text-align: center;
+            margin: 30px 0;
+            font-size: 10px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                font-size: 12px;
+            }
+            
+            .ascii-art, .ascii-name {
+                font-size: 8px;
+            }
+        }
+    </style>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">Thanoshan MV</a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="publications.html" class="nav-link">Publications</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+<<body>
+    <div class="container">
+        <div class="header"># .:: Thanoshan MV ::.</div>
+
+                <!-- <div class="section-header">CURRENT STATUS
+==============================</div> -->
+
+        <div class="section">
+            <div class="content">
+                Graduate Student at the University of Calgary
             </div>
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-image">
-                    <img src="./assets/images/profile-picture.jpg" alt="Thanoshan MV" class="profile-img">
-                </div>
-                <div class="hero-text">
-                    <h1>Thanoshan Vijayanandan</h1>
-                    <p class="hero-subtitle">Master's Student at the University of Calgary | Software Engineer</p>
-                    <p class="hero-description">Passionate about Software Engineering & Artificial Intelligence</p>
-                    
-                    <div class="hero-badges">
-                        <span class="badge badge-warning">Software Engineering</span>
-                        <span class="badge badge-success">Software Security</span>
-                        <span class="badge badge-danger">Data Science</span>
-                        <!-- <span class="badge badge-primary">AI Enthusiast</span> -->
-                    </div>
-                    
-                    <div class="hero-cta" style="justify-content: left;">
-                        <a href="about.html" class="btn btn-primary">Learn More</a>
-                        <a href="mailto:mvthanoshan@apache.org" class="btn btn-outline">Get In Touch</a>
-                    </div>
-                </div>
+        <div class="section">
+            <div class="content">
+                <strong>Email:</strong> <a href="mailto:mvthanoshan@apache.org" class="link">mvthanoshan@apache.org</a><br>
+                <strong>GitHub:</strong> <a href="https://github.com/ThanoshanMV" class="link" target="_blank">ThanoshanMV</a><br>
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mvthanoshan/" class="link" target="_blank">mvthanoshan</a><br>
+                <strong>Blog:</strong> <a href="https://mvthanoshan.medium.com/" class="link" target="_blank">mvthanoshan</a>
             </div>
         </div>
-    </section>
 
-    <!-- Quick Overview -->
-    <section class="overview">
-        <div class="container">
-            <div class="overview-grid">
-                <div class="overview-card">
-                    <div class="card-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3>Software Engineering</h3>
-                    <!-- <p>Focusing on innovative software solutions</p> -->
+        <div class="section-header">PUBLICATIONS
+==============================</div>
+
+        <div class="section">
+            <div class="content">
+                <div class="entry">
+                    <b>T. Vijayanandan</b>, K. Banujan, A. Induranga, B. T. Kumara, and K. Koswattage.
+                    "LeONet: A Hybrid Deep Learning Approach for High-Precision Code Clone Detection Using Abstract Syntax Tree Features". Big Data and Cognitive Computing, 2025. 
+                    <a href="https://doi.org/10.3390/bdcc9070187" class="link" target="_blank">Link</a>.
                 </div>
-                <div class="overview-card">
-                    <div class="card-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Research & Academia</h3>
-                    <!-- <p>Researching Software Security and AI complexities</p> -->
+
+                <div class="entry">
+                    <b>M. V. Thanoshan</b>, K. Banujan, B. Kumara, S. Prasanth, Z. Li, and I. Paik.
+                    "Code Clone Detection Using Boosting Algorithms," in 2023 3rd International Conference on Advanced Research in Computing (ICARC), 2023.
+                    <a href="https://doi.org/10.1109/ICARC57651.2023.10145638" class="link" target="_blank">Link</a>.
                 </div>
-                <div class="overview-card">
-                    <div class="card-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Open-source</h3>
-                    <!-- <p>Apache Software Foundation Committer for Apache ShardingSphere</p> -->
+
+                <div class="entry">
+                    <b>T. Vijayanandan</b>, B. Kumara, K. Banujan.
+                    "Detecting the Code Clone Density and Measuring the Complexity of Source Code Using SonarQube," in 2022 Applied Sciences Undergraduate Research Symposium (APSURS), 2022.
+                    <a href="http://repo.lib.sab.ac.lk:8080/xmlui/handle/susl/3947" class="link" target="_blank">Link</a>.
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Recent Work -->
-    <section class="recent-work">
-        <div class="container">
-            <h2 class="section-title">Recent Work</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <h3>LeONet: A Hybrid Deep Learning Approach for High-Precision Code Clone Detection Using Abstract Syntax Tree Features</h3>
-                    <p class="work-meta">Big Data and Cognitive Computing, 2025</p>
-                    <p>Published research on innovative approaches to code clone detection</p>
-                    <a href="https://doi.org/10.3390/bdcc9070187" target="_blank" class="work-link">View Publication</a>
+        <div class="section-header">PROJECTS
+==============================</div>
+
+        <div class="section">
+            <div class="content">
+                <div class="entry">
+                    <strong>PostgreSQL Parser Enhancement</strong><br>
+                    <i>Google Summer of Code</i> with <i>Apache ShardingSphere</i><br>
+                    Enhanced SQL Parser for PostgreSQL statements starting with 'c'<br>
+                    Technologies: Java, ANTLR<br>
+                    <a href="https://summerofcode.withgoogle.com/archive/2022/projects/LJFxxqPR" class="link" target="_blank">View Project</a>
                 </div>
-                <div class="work-item">
-                    <h3>The Pursuit of Happiness</h3>
-                    <p class="work-meta">Medium (blog), 2025</p>
-                    <p>Published an article about a book I read</p>
-                    <a href="https://medium.com/@mvthanoshan/the-pursuit-of-happiness-387defb3ab4a" target="_blank" class="work-link">View Article</a>
+
+                <div class="entry">
+                    <strong>Oracle DML SQL Proofreading</strong><br>
+                    <i>Google Summer of Code</i> with <i>Apache ShardingSphere</i><br>
+                    Improved Oracle DML SQL definitions for parser engine<br>
+                    Technologies: Java, ANTLR<br>
+                    <a href="https://summerofcode.withgoogle.com/archive/2021/projects/6296096749387776" class="link" target="_blank">View Project</a>
                 </div>
-                <div class="work-item">
-                    <h3>PostgreSQL Parser Enhancement</h3>
-                    <p class="work-meta">Google Summer of Code, 2022</p>
-                    <p>Enhanced ShardingSphere SQL Parser for PostgreSQL statements</p>
-                    <a href="https://summerofcode.withgoogle.com/archive/2022/projects/LJFxxqPR" target="_blank" class="work-link">View Project</a>
+
+                <div class="entry">
+                    <strong>Nina - HR Process Automation Bot</strong><br>
+                    Built intelligent chatbot for HR process automation at <i>99x</i><br>
+                    Technologies: Azure Bot Framework, Microsoft QnA Maker, .NET<br>
+                    <a href="https://www.youtube.com/watch?v=9h0b_23wJww" class="link" target="_blank">Watch Webinar</a>
+                </div>
+
+                <div class="entry">
+                    <strong>Meiko: Micro-Frontend PoC</strong><br>
+                    Proof of concept for micro frontend architecture<br>
+                    Technologies: JavaScript, Micro Frontends, Web Architecture<br>
+                    <a href="https://mvthanoshan.medium.com/meiko-a-micro-frontend-implementation-project-bab4e47eebf8" class="link" target="_blank">Read About Project</a>
+                </div>
+
+                <div class="entry">
+                    <strong>TIMS - Three-wheeler Information Management System</strong><br>
+                    Comprehensive Java application for vehicle data management<br>
+                    Technologies: Java, Desktop Application, Database Management<br>
+                    <a href="https://github.com/ThanoshanMV/tims" class="link" target="_blank">View on GitHub</a>
+                </div>
+
+                <div class="entry">
+                    <strong>Fallout Shelter</strong><br>
+                    Secure backup software with public key cryptography<br>
+                    Technologies: Java, Cryptography, Security<br>
+                    <a href="https://github.com/ThanoshanMV/fallout-shelter" class="link" target="_blank">View on GitHub</a>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Call to Action -->
-    <section class="contact-content">
-        <div class="container">
-            <div class="cta-section">
-                <h2>Ready to Start a Conversation?</h2>
-                <p>Whether you have a project idea, want to collaborate, or just want to say hello, I'd love to hear from you!</p>
-                <div class="hero-cta">
-                    <a href="mailto:mvthanoshan@apache.org" class="btn btn-primary">
-                        <i class="fas fa-envelope"></i> Send Email
-                    </a>
+        <div class="section-header">NEWS
+==============================</div>
+
+        <div class="section">
+            <div class="content">
+                <div class="entry">
+                    [January 2026] Portfolio migrated to plain text format inspired by Phrack magazine
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-social">
-                    <a href="mailto:mvthanoshan@apache.org" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com/ThanoshanMV" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/mvthanoshan/" class="social-link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://mvthanoshan.medium.com/" class="social-link" target="_blank">
-                        <i class="fab fa-medium"></i>
-                    </a>
-                </div>
-                <p class="footer-text">Made with ❤️ by Thanoshan MV</p>
-            </div>
+        <div class="footer">
+            <em>Last updated: January 24, 2026</em><br>
         </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="./assets/js/main.js"></script>
+    </div>
 </body>
 </html>
